@@ -1,0 +1,156 @@
+.rating__item {
+	width: 100%;
+	position: relative;
+	border-radius: 50px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 1px solid var(--medium-black);
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	column-gap: 5px;
+}
+
+.rating__itemMain {
+	display: grid;
+	grid-template-columns: 7fr 1fr;
+	width: 50%;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.rating__item:nth-child(1) {
+	border: 1px solid gold;
+}
+
+.rating__item:nth-child(1) .rating__itemMain > .rating__username {
+	text-shadow: 0px 0px 20px gold;
+	color: gold;
+	font-weight: bold;
+}
+
+.rating__item:nth-child(2) {
+	border: 1px solid silver;
+}
+.rating__item:nth-child(3) {
+	border: 1px solid rgb(205, 127, 50);
+}
+
+.rating__item:nth-child(1)::before {
+	content: '🥇';
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.rating__item:nth-child(2)::before {
+	content: '🥈';
+	font-weight: bold;
+	font-size: 18px;
+}
+.rating__item:nth-child(3)::before {
+	content: '🥉';
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.rating__item::before {
+	content: '🏅';
+	font-size: 18px;
+}
+
+.rating__username {
+	display: flex;
+	justify-content: center;
+}
+
+.rating__role {
+	display: flex;
+	justify-content: center;
+}
+
+.rating__maxRole {
+	text-shadow: 0px 0px 5px red;
+}
+
+.rating__itemInfo {
+	z-index: 10;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 50%;
+}
+
+.rating__balance {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 4px;
+}
+
+.balance__icon {
+	height: 15px;
+	width: 15px;
+}
+
+.rating__profit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 4px;
+}
+
+@media (max-width: 480px) {
+	.rating__item {
+		padding: 5px;
+	}
+
+	.rating__itemMain {
+		width: 100%;
+	}
+
+	.rating__itemInfo {
+		width: 80%;
+		position: relative;
+		flex-direction: column;
+		position: absolute;
+		align-items: start;
+		top: 110%;
+		background-color: var(--primary-bg);
+		border: 1px solid var(--primary-color);
+		padding: 5px;
+		border-radius: 5px;
+		right: 0;
+		pointer-events: none;
+		transition: opacity 0.3s ease, transform 0.3s ease;
+	}
+
+	.rating__itemInfo::before {
+		content: '';
+		position: absolute;
+		top: -8.5px;
+		right: 5px;
+		height: 15px;
+		width: 15px;
+		background-color: black;
+		border: 1px solid var(--primary-color);
+		rotate: 45deg;
+	}
+	.rating__itemInfo::after {
+		content: '';
+		position: absolute;
+		top: -7px;
+		right: 5px;
+		height: 15px;
+		width: 15px;
+		background-color: black;
+		border: 1px solid black;
+		rotate: 45deg;
+	}
+
+	.rating__balance {
+		justify-content: start;
+	}
+
+	.rating__profit {
+		justify-content: start;
+	}
+}

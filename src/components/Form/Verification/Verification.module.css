@@ -1,0 +1,58 @@
+.main {
+	font-family: Jost, sans-serif;
+	padding: 100px 20px 20px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	row-gap: 10px;
+	color: var(--primary-color);
+	background-image: url('/auth.webp');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+	width: 100vw;
+}
+
+.block {
+	max-width: 700px;
+	padding: 20px;
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.35);
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+}
+
+.title {
+	font-size: clamp(1.063rem, 0.767rem + 1.48vw, 1.875rem);
+}
+
+.text {
+	color: var(--secondary-color);
+	font-size: clamp(0.75rem, 0.568rem + 0.91vw, 1.25rem);
+}
+
+@media (max-width: 768px) {
+	.block {
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 480px) {
+	.block {
+		max-width: 300px;
+	}
+	.title {
+		font-size: 17px;
+	}
+
+	.text {
+		font-size: 12px;
+	}
+}

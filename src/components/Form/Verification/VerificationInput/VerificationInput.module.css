@@ -1,0 +1,21 @@
+.field {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	border: none;
+	outline: none;
+	padding-bottom: 5px;
+	border: 1px solid var(--primary-color);
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	color: var(--primary-color);
+	font-size: clamp(1.438rem, 0.369rem + 5.34vw, 4.375rem);
+	padding: 10px;
+}
+
+.field::placeholder {
+	font-size: clamp(1.563rem, 0.994rem + 2.84vw, 3.125rem);
+	color: var(--secondary-color);
+	font-weight: lighter;
+}

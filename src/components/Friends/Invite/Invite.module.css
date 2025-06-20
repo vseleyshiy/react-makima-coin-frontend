@@ -1,0 +1,57 @@
+.row {
+	width: 100%;
+	cursor: pointer;
+	margin: 30px 0px 20px 0px;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	background-color: var(--dark-black);
+	padding: 15px;
+	border-radius: 15px;
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem);
+}
+
+.desc {
+	font-size: clamp(0.813rem, 0.744rem + 0.34vw, 1rem);
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+}
+
+.money {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+}
+
+.coin {
+	height: 20px;
+	width: 20px;
+}
+
+@media (max-width: 480px) {
+	.row {
+		padding: 10px;
+		column-gap: 5px;
+	}
+
+	.coin {
+		height: 15px;
+		width: 15px;
+	}
+}

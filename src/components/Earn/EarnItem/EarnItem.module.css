@@ -1,0 +1,46 @@
+.item {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--dark-black);
+	padding: 8px;
+	border-radius: 10px;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.img__wrap {
+	height: 40px;
+	width: 40px;
+}
+
+.img {
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3px;
+}
+
+.title {
+	font-size: 15px;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}

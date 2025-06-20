@@ -1,0 +1,40 @@
+.page {
+	z-index: 10;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 20px;
+	padding: 10px;
+}
+
+.img__wrap {
+	width: 50%;
+	height: 80%;
+}
+
+.img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	object-position: center center;
+}
+
+.content {
+	width: 50%;
+	color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	row-gap: 10px;
+}
+
+.title {
+	font-size: clamp(1.125rem, 0.852rem + 1.36vw, 1.875rem);
+}
+
+@media (max-width: 480px) {
+	.page {
+		column-gap: 10px;
+	}
+}

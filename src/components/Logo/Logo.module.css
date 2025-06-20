@@ -1,0 +1,21 @@
+.logo__wrap {
+	font-family: Rubik, sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	background: linear-gradient(135deg, rgb(180, 0, 0), red);
+	background-clip: text;
+	background-size: cover;
+	-webkit-background-clip: text;
+	color: transparent;
+	/* height: 50px;
+	width: 50px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo__wrap > span {
+	transform: translateY(-6px);
+	font-size: 8px;
+	color: white;
+}

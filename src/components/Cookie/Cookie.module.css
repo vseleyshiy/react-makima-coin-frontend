@@ -1,0 +1,60 @@
+.cookie {
+	background-color: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(10px);
+	z-index: 20;
+	position: fixed;
+	/* width: 20%; */
+	bottom: 20px;
+	right: 20px;
+	padding: 20px;
+	border-radius: 20px;
+	font-size: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem);
+	transition: all 0.5s ease;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 5px;
+}
+
+.iconize__text {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+}
+
+.button {
+	cursor: pointer;
+	font-size: 15px;
+	color: var(--primary-color);
+	background-color: transparent;
+	border-radius: 50px;
+	border: 1px solid var(--primary-color);
+	padding: 10px;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+	background-color: var(--secondary-hover);
+	border: 1px solid var(--secondary-hover);
+}
+
+@media (max-width: 480px) {
+	.cookie {
+		padding: 10px;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+		row-gap: 8px;
+	}
+
+	.button {
+		padding: 5px;
+	}
+}

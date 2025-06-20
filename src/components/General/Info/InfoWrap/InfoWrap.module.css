@@ -1,0 +1,14 @@
+.info__info {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.info__title {
+	font-size: clamp(1.5rem, 1.136rem + 1.82vw, 2.5rem);
+}
+
+.info__list {
+	display: flex;
+	flex-direction: column;
+}

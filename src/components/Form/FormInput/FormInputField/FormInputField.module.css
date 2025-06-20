@@ -1,0 +1,24 @@
+.form__inputWrap {
+	display: flex;
+	align-items: center;
+	column-gap: 3px;
+	border-bottom: 1px solid white;
+	padding-bottom: 5px;
+	/* background-color: rgba(57, 57, 57, 0.5); */
+}
+
+.form__input {
+	font-size: clamp(0.938rem, 0.604rem + 0.69vw, 1.125rem);
+	padding: 2px;
+	width: 100%;
+	color: white;
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+.form__inputButton {
+	color: white;
+	width: 18px;
+	height: 18px;
+}

@@ -1,0 +1,55 @@
+.buttons {
+	position: absolute;
+	padding: 10px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 10px;
+	color: white;
+}
+
+.icon {
+	cursor: pointer;
+	margin-left: 5px;
+	height: 17px;
+	width: 17px;
+}
+
+.logout__button {
+	width: 40%;
+	cursor: pointer;
+	background-color: transparent;
+	border-bottom: 1px solid var(--secondary-color);
+	display: flex;
+	align-items: center;
+	column-gap: 1px;
+	font-size: 18px;
+	color: var(--secondary-color);
+	transition: color 0.3s ease-in-out, scale 0.3s ease-in-out,
+		border-bottom 0.3s ease-in-out;
+}
+
+.logout__button:hover {
+	scale: 1.01;
+	color: var(--secondary-hover);
+	border-bottom: 1px solid var(--secondary-hover);
+}
+
+@media (max-width: 768px) {
+	.buttons {
+		flex-direction: column;
+		row-gap: 10px;
+		align-items: start;
+	}
+
+	.logout__button {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		font-size: 15px;
+		width: 160px;
+	}
+}

@@ -1,0 +1,41 @@
+.friend {
+	background-color: var(--dark-black);
+	display: grid;
+	grid-template-columns: 0.8fr 5fr 1.5fr;
+	column-gap: 10px;
+	align-items: center;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.icon {
+	height: 100%;
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3px;
+}
+
+.name {
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+}
+
+.role {
+}
+
+.balance {
+}
+
+.bonus {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+}

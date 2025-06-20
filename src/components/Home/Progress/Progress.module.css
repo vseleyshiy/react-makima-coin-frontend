@@ -1,0 +1,45 @@
+.progress {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 3px;
+	padding: 0px 10px;
+	z-index: 10;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 13px;
+}
+
+.role {
+	color: white;
+	font-weight: bold;
+}
+
+.lvl {
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+	color: white;
+}
+
+.lvlValue {
+	color: white;
+}
+
+.bar {
+	background-color: var(--dark-black);
+	border-radius: 10px;
+	width: 100%;
+	height: 15px;
+	border: 2px solid var(--medium-black);
+}
+
+.passed {
+	border-radius: 10px;
+	height: 100%;
+	background: linear-gradient(90deg, green, pink, purple);
+}

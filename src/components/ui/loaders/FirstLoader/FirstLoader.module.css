@@ -1,0 +1,29 @@
+.loading {
+	font-family: Jost, sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 60px 20px 20px 20px;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--main-bg);
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	color: var(--primary-color);
+	font-size: clamp(1.875rem, 0.284rem + 7.95vw, 6.25rem);
+}
+
+.loading__text {
+	font-size: clamp(1.25rem, 0.568rem + 3.41vw, 3.125rem);
+	color: var(--secondary-color);
+}

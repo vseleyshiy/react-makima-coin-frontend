@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+}
+
+:root {
+	--primary-bg: black;
+	--primary-color: white;
+	--secondary-color: rgb(235, 235, 235);
+	--secondary-hover: rgb(180, 180, 180);
+	--main-bg: rgb(50, 0, 0);
+	--dark-black: rgb(30, 30, 30);
+	--medium-black: rgb(40, 40, 40);
+	--light-black: rgb(50, 50, 50);
+	--bright-black: rgb(120, 120, 120);
+	--cute-red: rgb(120, 23, 23);
+	--submit: rgb(56, 56, 255);
+	--link: rgb(255, 110, 110);
+	--link-hover: rgb(255, 90, 90);
+	--modal: rgb(20, 20, 20);
+}
+
+[data-theme="light"] {
+	--primary-bg: rgb(158, 71, 71);
+	--primary-color: rgb(255, 255, 255);
+	--secondary-color: rgb(40, 40, 40)
+	--secondary-hover: rgb(60, 60, 60);
+	--main-bg: rgb(123, 30, 30);
+	--dark-black: rgb(110, 110, 110);
+	--medium-black: rgb(160, 160, 160);
+	--light-black: rgb(170, 170, 170);
+	--bright-black: rgb(215, 215, 215);
+	--cute-red: rgb(166, 30, 30);
+	--submit: rgb(56, 56, 255);
+	--link: rgb(220, 220, 220);
+	--link-hover: rgb(190, 190, 190);
+	--modal: rgb(140, 140, 140);
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+::-webkit-scrollbar-track {
+	background: black;
+}
+::-webkit-scrollbar-thumb {
+	background: rgb(50, 50, 50);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(30, 30, 30);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: Rubik, sans-serif;
+	padding: 0;
+	margin: 0;
+	overscroll-behavior-y: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul > li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.lock {
+	overflow: hidden;
+}
+
+.fraction {
+	user-select: none;
+	pointer-events: none;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	pointer-events: none;
+	background-image: url('/onclick.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	animation: move-up 2s forwards;
+}
+
+@keyframes move-up {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+}

@@ -1,0 +1,19 @@
+.list {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	z-index: 10;
+}
+
+@media (max-width: 480px) {
+	.list {
+		gap: 5px;
+	}
+
+	.item {
+		flex: 0 1 calc((100% - 5px) / 2);
+	}
+}

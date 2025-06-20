@@ -1,0 +1,28 @@
+.text {
+	z-index: 10;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+	font-size: 35px;
+	color: white;
+}
+
+.text__spend {
+	animation: spend 0.8s linear 1;
+}
+
+@keyframes spend {
+	0% {
+		scale: 1;
+		color: var(--primary-color);
+	}
+	50% {
+		scale: 1.05;
+		color: rgb(255, 100, 100);
+	}
+	100% {
+		scale: 1;
+		color: var(--primary-color);
+	}
+}

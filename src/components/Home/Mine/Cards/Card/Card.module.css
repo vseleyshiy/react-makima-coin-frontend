@@ -1,0 +1,130 @@
+.card {
+	position: relative;
+	color: white;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 15px;
+	border: 1px solid var(--dark-black);
+	flex: 0 1 calc((100% - 10px) / 2);
+	transition: border 0.3s ease-in-out;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.card:hover {
+	border: 1px solid var(--bright-black);
+}
+
+.isUpdating {
+	pointer-events: none;
+	background-color: rgba(0, 0, 0, 0.95);
+	color: var(--bright-black);
+}
+
+.isUpdating:hover {
+	border: 1px solid transparent;
+}
+
+.card__error {
+	text-align: center;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.main {
+	text-align: center;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 15px 8px 8px 8px;
+	border-bottom: 1px solid var(--medium-black);
+}
+
+.main__col {
+	width: 100%;
+}
+
+.img__wrap {
+	width: 40px;
+	height: 40px;
+}
+
+.img {
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.name {
+	font-size: clamp(0.563rem, 0.517rem + 0.23vw, 0.688rem);
+}
+
+.profit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 8px;
+	row-gap: 2px;
+	margin-top: 10px;
+	font-size: clamp(0.563rem, 0.517rem + 0.23vw, 0.688rem);
+	color: var(--bright-black);
+}
+
+.profit__value {
+	display: flex;
+	align-items: center;
+	column-gap: 1px;
+	color: white;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	font-size: clamp(0.563rem, 0.517rem + 0.23vw, 0.688rem);
+	font-weight: bold;
+}
+
+.lvl {
+	padding: 10px;
+	border-right: 1px solid var(--medium-black);
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	column-gap: 3px;
+	padding: 10px;
+}
+
+@media (max-width: 380px) {
+	.card__error {
+		padding: 10px;
+	}
+	.update {
+		height: 75px;
+		width: 75px;
+	}
+	.timer {
+		font-size: 12px;
+	}
+	.timer > span {
+		font-size: 7px;
+	}
+	.profit {
+		margin-top: 5px;
+	}
+
+	.lvl {
+		padding: 5px;
+	}
+
+	.price {
+		padding: 5px;
+	}
+}

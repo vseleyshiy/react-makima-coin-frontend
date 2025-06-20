@@ -1,0 +1,16 @@
+.theme__toggle {
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.theme__light {
+	background-color: black;
+	border: 1px solid white;
+}
+
+.theme__dark {
+	background-color: white;
+	border: 1px solid black;
+}

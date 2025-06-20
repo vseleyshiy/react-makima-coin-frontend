@@ -1,0 +1,34 @@
+.send {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 5px;
+}
+
+.send__text {
+	font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
+}
+
+.timer {
+	font-weight: bold;
+	font-size: clamp(0.813rem, 0.722rem + 0.45vw, 1.063rem);
+}
+
+.send__button {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid var(--primary-color);
+	color: var(--primary-color);
+	font-weight: bold;
+	font-size: clamp(0.813rem, 0.722rem + 0.45vw, 1.063rem);
+}
+
+@media (max-width: 480px) {
+	.send {
+		row-gap: 5px;
+		flex-direction: column;
+	}
+}

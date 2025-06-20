@@ -1,0 +1,30 @@
+.form__rowInfo {
+	display: flex;
+	align-items: center;
+	column-gap: 3px;
+}
+
+.form__rowTitle {
+	color: white;
+	font-size: clamp(0.813rem, 0.479rem + 0.69vw, 1rem);
+}
+
+.form__help {
+	color: white;
+	width: 14px;
+	height: 14px;
+}
+
+.error {
+	top: 0px;
+	right: 0;
+	position: absolute;
+	color: rgb(255, 110, 110);
+	font-size: clamp(0.719rem, -0.325rem + 1.68vw, 0.938rem);
+}
+
+@media (max-width: 768px) {
+	.error {
+		font-size: clamp(0.75rem, 0.616rem + 0.67vw, 0.938rem);
+	}
+}

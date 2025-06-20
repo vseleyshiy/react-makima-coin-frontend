@@ -1,0 +1,28 @@
+.energy {
+	margin-top: 20px;
+	width: 100%;
+	padding: 0px 10px;
+	z-index: 10;
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item {
+	color: white;
+	display: flex;
+	align-items: center;
+	column-gap: 3px;
+	cursor: pointer;
+}
+
+.value {
+	font-weight: bold;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+}

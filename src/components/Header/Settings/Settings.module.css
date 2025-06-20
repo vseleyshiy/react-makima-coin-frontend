@@ -1,0 +1,11 @@
+.settings {
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.theme__buttons {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}

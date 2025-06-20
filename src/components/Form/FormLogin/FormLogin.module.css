@@ -1,0 +1,79 @@
+.form {
+	color: white;
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+}
+
+.form__row {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+.password__section {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+.form__button {
+	margin-top: 20px;
+	cursor: pointer;
+	padding: 8px 12px;
+	font-weight: bold;
+	font-size: clamp(0.875rem, 0.653rem + 0.46vw, 1rem);
+	background-color: var(--bright-black);
+	color: rgb(50, 50, 50);
+	border: none;
+	width: 100%;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.form__button:hover {
+	background-color: rgb(170, 170, 170);
+}
+
+.link {
+	color: white;
+	position: absolute;
+	bottom: 20px;
+	transform: translateX(50%);
+	right: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	column-gap: 5px;
+	font-size: clamp(0.938rem, 0.382rem + 1.16vw, 1.25rem);
+}
+
+.button__link {
+	color: white;
+	border-bottom: 1px solid white;
+	transition: all 0.3s ease-in-out;
+}
+
+.button__link:hover {
+	color: rgb(220, 220, 220);
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+@media (max-width: 480px) {
+	.form {
+		margin-top: 10px;
+		row-gap: 15px;
+	}
+
+	.form__button {
+		position: relative;
+	}
+
+	.link {
+		bottom: 50px;
+	}
+}

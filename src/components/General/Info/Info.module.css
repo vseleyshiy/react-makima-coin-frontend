@@ -1,0 +1,37 @@
+.info {
+	width: 100%;
+	background-color: var(--primary-bg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+}
+
+.info__content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 5px;
+}
+
+.info__text {
+	color: var(--secondary-color);
+	font-size: clamp(0.938rem, 0.824rem + 0.57vw, 1.25rem);
+}
+
+@media (max-width: 1200px) {
+	.info__content {
+		padding: 20px 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.info__content {
+		padding: 20px 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.info__list > p {
+		margin: 5px 0;
+	}
+}

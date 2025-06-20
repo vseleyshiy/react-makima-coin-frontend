@@ -1,0 +1,36 @@
+.img__wrap {
+	height: 70px;
+	width: 70px;
+}
+
+.img {
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3px;
+}
+
+.title {
+	font-size: 15px;
+}
+
+.menu__price {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}
